@@ -37,4 +37,4 @@ Chaturanga is an ancient Indian strategy game. Chaturanga is first known from th
 
 # License
 
-This Project is protected under [MIT License](LICENSE).
+This Project is licensed under [MIT License](LICENSE).
