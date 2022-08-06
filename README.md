@@ -26,9 +26,11 @@ Chaturanga is an ancient Indian strategy game. Chaturanga is first known from th
 - Pawns promote when they reach their last row (the first row for the enemy). Unlike chess, in chaturanga pawn doesn´t become the piece that the owner wants, it just become the kind of piece that occupied the same square at the start of the game. There is also another limit: the piece introduced in the board must be one of the previously captured pieces; so, it is not possible to have three rooks, three horses, three elephants or two advisers at the same time. The pawns that do not promote stay over the board and may not be moved.
 
 # Recommended Toolchain
-Microsoft Windows: Visual Studio 2022
-Linux: GCC or LLVM
-MacOS: LLVM
+| Operating System | Toolchain |
+|---|---|
+| Microsoft Windows | Visual Studio 2022 |
+| Linux | GCC/LLVM | 
+| MacOS | LLVM |
 
 # External Libraries
 - [FreeGlut](https://github.com/FreeGLUTProject/freeglut)
