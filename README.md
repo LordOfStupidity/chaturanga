@@ -19,7 +19,7 @@ Chaturanga is an ancient Indian strategy game. Chaturanga is first known from th
 
 ## Additional rules
 
-- ### [Stalemate](https://en.wikipedia.org/wiki/Stalemate) was a win for a stalemated player.
+- [Stalemate](https://en.wikipedia.org/wiki/Stalemate) was a win for a stalemated player.
 
 - The player that is first to [bare the opponent's king](https://en.wikipedia.org/wiki/Bare_king) (i.e. capture all enemy pieces except the king) wins. In shatranj this is also a win, but only if the opponent cannot bare the player's king on his next turn.
 
