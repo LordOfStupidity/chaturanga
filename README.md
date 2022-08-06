@@ -36,6 +36,9 @@ Microsoft Windows: Visual Studio 2022
 Linux: GCC or LLVM
 MacOS: LLVM
 
+# External Libraries
+* [FreeGlut](https://github.com/FreeGLUTProject/freeglut)
+
 # License
 
 This Project is protected under [MIT License](LICENSE).
