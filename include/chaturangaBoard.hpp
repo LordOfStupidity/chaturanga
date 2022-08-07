@@ -98,7 +98,7 @@ private:
     int lastx, lasty;
 };
 
-chaturangaBoard cb;
+extern chaturangaBoard cb;
 
 void click(int button, int state, int x, int y);
 
