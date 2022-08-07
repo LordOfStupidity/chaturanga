@@ -278,3 +278,9 @@ bool chaturangaBoard::remainingPieces(bool lastColor) {
 
     return (x > 1) ? true : false;
 }
+
+void click(int button, int state, int x, int y) {
+    if (button != GLUT_RIGHT_BUTTON) {
+        cb.click(button, state, x, y);
+    }
+}

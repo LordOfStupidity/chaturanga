@@ -97,4 +97,6 @@ private:
 
 chaturangaBoard cb;
 
+void click(int button, int state, int x, int y);
+
 #endif // !CHATURANGA_BOARD_HPP
