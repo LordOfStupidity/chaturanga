@@ -87,11 +87,14 @@ public:
      */
     bool remainingPieces(bool lastColor);
 
-private:
+public:
     chaturangaSquare board[8][8];
+private:
     std::stack<logEntry> move_stack;
     bool lastColor;
     int lastx, lasty;
 };
+
+chaturangaBoard cb;
 
 #endif // !CHATURANGA_BOARD_HPP

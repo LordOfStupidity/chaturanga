@@ -1,6 +1,6 @@
 #include <GL/glut.h>
 #include "chaturangaBoard.hpp"
-#include "interface.hpp"
+#include "moves.hpp"
 
 void chaturangaBoard::initiate() {
     lastColor = false;
@@ -267,7 +267,7 @@ void chaturangaBoard::undo() {
 
 bool chaturangaBoard::remainingPieces(bool lastColor) {
     int x = 0;
-    
+
     for (int i = 0; i < 8; i++) {
         for (int j = 0; j < 8; j++) {
             if (board[i][j].curr.getPieceDef() == lastColor) {

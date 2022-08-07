@@ -5,17 +5,17 @@ Chaturanga is an ancient Indian strategy game. Chaturanga is first known from th
 
 ## Legal Moves
 
-- **Pawn or Bhata**: Moves and captures the same as a pawn in chess, but without a double-step option on the first move
+- **Pawn(Bhata)**: Moves and captures the same as a pawn in chess, but without a double-step option on the first move
 
-- **Rook or Ratha**: Moves the same as a rook in chess- whereby the rook moves horizontally or vertically, through any number of unoccupied squares.
+- **Rook(Ratha)**: Moves the same as a rook in chess- whereby the rook moves horizontally or vertically, through any number of unoccupied squares.
 
-- **Horse or Ashva**: Moves the same as a knight in chess.
+- **Horse(Ashva)**: Moves the same as a knight in chess.
 
-- **Elephant or Gaja**: Moves two squares diagonally, forwards or backwards, and may jump over any piecewo squares in any orthogonal (vertical or horizontal) direction, jumping over the first square
+- **Elephant(Gaja)**: Moves two squares diagonally, forwards or backwards, and may jump over any piecewo squares in any orthogonal (vertical or horizontal) direction, jumping over the first square
 
-- **Adviser or Mantri**: Moves one step diagonally in any direction, like the fers in shatranj.
+- **Adviser(Mantri)**: Moves one step diagonally in any direction, like the fers in shatranj.
 
-- **King or Raja**: Moves one step in any direction (vertical, horizontal or diagonal), the same as the king in chess. There is no [castling](https://en.wikipedia.org/wiki/Castling) in chaturanga.
+- **King(Raja)**: Moves one step in any direction (vertical, horizontal or diagonal), the same as the king in chess. There is no [castling](https://en.wikipedia.org/wiki/Castling) in chaturanga.
 
 ## Additional rules
 

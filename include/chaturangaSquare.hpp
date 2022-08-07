@@ -13,9 +13,10 @@ public:
     void setNormal();
     void setClear();
 
+public:
+    chaturangaPiece curr;
 private:
     int x, y;
-    chaturangaPiece curr;
     bool color;
     bool legal;
 
