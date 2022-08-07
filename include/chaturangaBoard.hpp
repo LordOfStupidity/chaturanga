@@ -81,10 +81,16 @@ public:
      */
     void undo();
 
+    /**
+     * @brief Check whether if there's any other piece remaining on the board
+     * 
+     */
+    bool remainingPieces(bool lastColor);
+
 private:
     chaturangaSquare board[8][8];
     std::stack<logEntry> move_stack;
-    bool lastWhite;
+    bool lastColor;
     int lastx, lasty;
 };
 

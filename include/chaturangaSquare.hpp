@@ -18,6 +18,8 @@ private:
     chaturangaPiece curr;
     bool color;
     bool legal;
+
+friend class chaturangaBoard;
 };
 
 #endif // !chaturanga_SQUARE_HPP
