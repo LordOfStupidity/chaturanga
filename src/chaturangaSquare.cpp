@@ -1,4 +1,4 @@
-#include "chaturanga_square.hpp"
+#include "chaturangaSquare.hpp"
 #include "blackPiece.hpp"
 #include "whitePiece.hpp"
 #include <GL/glut.h>

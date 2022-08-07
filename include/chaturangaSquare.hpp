@@ -1,7 +1,7 @@
-#ifndef chaturanga_SQUARE_HPP
-#define chaturanga_SQUARE_HPP 1
+#ifndef CHATURANGA_SQUARE_HPP
+#define CHATURANGA_SQUARE_HPP 1
 
-#include "chaturanga_piece.hpp"
+#include "chaturangaPiece.hpp"
 
 class chaturangaSquare {
 public:

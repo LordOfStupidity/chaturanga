@@ -3,7 +3,7 @@
 
 #include <bits/stdc++.h>
 
-#include "chaturanga_piece.hpp"
+#include "chaturangaPiece.hpp"
 
 struct logEntry {
 public:

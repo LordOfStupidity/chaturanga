@@ -1,4 +1,4 @@
-#include "chaturanga_piece.hpp"
+#include "chaturangaPiece.hpp"
 
 chaturangaPiece::chaturangaPiece(int pd, bool c) {
     pieceDef = pd;
