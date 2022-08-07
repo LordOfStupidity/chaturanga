@@ -26,3 +26,11 @@ int chaturangaPiece::getPieceDef() {
 bool chaturangaPiece::getColor() {
     return color;
 }
+
+void chaturangaPiece::setColor(bool c) {
+    color = c;
+}
+
+void chaturangaPiece::setPieceDef(int c) {
+    pieceDef = c;
+}

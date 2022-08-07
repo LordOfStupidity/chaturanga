@@ -2,14 +2,13 @@
 #define chaturanga_SQUARE_HPP 1
 
 #include "chaturanga_piece.hpp"
-#include "GL/glut.h"
 
 class chaturangaSquare {
 public:
     chaturangaSquare();
     
     void drawPiece();
-    void setSquare();
+    void setSquare(chaturangaPiece cp);
     void setAsLegal();
     void setNormal();
     void setClear();

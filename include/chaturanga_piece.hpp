@@ -31,24 +31,36 @@ public:
      * @brief Define the behavior of '=' operator for chaturangaPiece class
      * 
      * @param[in] c 
-     *      any chaturangapiece object
+     *      any chaturangaPiece object
      */
     void operator=(chaturangaPiece c);
 
     /**
      * @brief Get the Piece Def of object
      * 
-     * @return int 
+     * @return PieceDef 
      */
     int getPieceDef();
 
     /**
      * @brief Get the Color of object
      * 
-     * @return true 
-     * @return false 
+     * @return true for white 
+     * @return false for black
      */
     bool getColor();
+
+    /**
+     * @brief Set the PieceDef of the piece
+     * 
+     */
+    void setPieceDef(int c);
+
+    /**
+     * @brief Set the Color of the piece
+     * 
+     */
+    void setColor(bool c);
 
 private:
     int pieceDef;
