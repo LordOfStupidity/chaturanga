@@ -87,6 +87,9 @@ public:
      */
     bool remainingPieces(bool lastColor);
 
+    void setLastx(int x);
+    void setLasty(int y);
+
 public:
     chaturangaSquare board[8][8];
 private:

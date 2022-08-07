@@ -18,4 +18,6 @@ float pawnEvalBlack[8][8];
 
 float evalBoardState();
 
+int minimax(int depth, int alpha, int beta, bool lastColor);
+
 #endif // !EVALUATE_HPP

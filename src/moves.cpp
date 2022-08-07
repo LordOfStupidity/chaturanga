@@ -1,6 +1,7 @@
 #include "moves.hpp"
 #include "chaturangaBoard.hpp"
 #include "interface.hpp"
+#include "evaluate.hpp"
 
 bool legalState(bool lastColor) {
     int a, b;
@@ -393,4 +394,57 @@ std::vector<int> legalMoves(int pos, bool lastColor) {
     }
 
     return moves;
+}
+
+void compMove(int depth, bool lastColor) {
+    std::vector<std::pair<int, int>> allMoves;
+    std::vector<int> curr;
+
+    for (int i = 0; i < 8; i++) {
+        for (int j = 0; j < 8; j++) {
+            if (cb.board[i][j].curr.getPieceDef() != 0 && cb.board[i][j].curr.getColor() != lastColor) {
+                curr = legalMoves(i * 8 + j, lastColor);
+
+                for (auto x : curr) {
+                    allMoves.push_back({i * 8 + j, x});
+                }
+            }
+        }
+    }
+
+    int alpha = INT_MIN;
+    int beta = INT_MAX;
+    std::pair<int, int> bestMoveFound;
+
+    if (allMoves.size() == 0) {
+        // TODO: Stalemate/CheckMate screen.
+        return;
+    }
+
+    for (int i = 0; i < allMoves.size(); i++) {
+        int from = allMoves[i].first;
+        int to = allMoves[i].second;
+        
+        cb.move(to / 8, to % 8, from / 8, from % 8);
+        int value = minimax(depth - 1, alpha, beta, !lastColor);
+        cb.undo();
+
+        if (lastColor && value < beta) {
+            beta = value;
+            bestMoveFound = allMoves[i];
+        } else if ((!lastColor) && value > alpha) {
+            alpha = value;
+            bestMoveFound = allMoves[i];
+        }
+    }
+
+    int from = bestMoveFound.first;
+    int to = bestMoveFound.second;
+
+    cb.setLastx(from / 8);
+    cb.setLasty(from % 8);
+
+    cb.move(to / 8, to % 8);
+    
+    return;
 }
